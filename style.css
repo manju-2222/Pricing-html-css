@@ -135,7 +135,7 @@ button {
   margin-top: 20px;
 }
 
-button:hover{
+.hovering:hover{
   background: white;
   color: hsl(237, 63%, 64%);
   border-radius: 5px;
@@ -152,7 +152,7 @@ button:hover{
   color: white;
 }
 
-.highlighted button:hover{
+.highlighted .hovering:hover{
   background: hsl(237, 63%, 64%);
   color: white;
   border: 2px solid hsl(234, 14%, 74%);

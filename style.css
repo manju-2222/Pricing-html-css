@@ -1,0 +1,207 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  background-color: hsl(240, 78%, 98%);
+  color: hsl(233, 13%, 49%);
+  text-align: center;
+  padding: 2rem 1rem;
+  background-image: url('top_img.svg');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-attachment: fixed;
+  background-size: 250px;
+}
+
+.pricing-container h1 {
+  color: hsl(232, 13%, 33%);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  color: hsl(234, 14%, 74%);
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: hsl(237, 63%, 64%);
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 18px;
+  left: 4px;
+  bottom: 4.5px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+/* 
+.input:checked+.slider::before {
+  transform: translateX(26px);
+} */
+input[type="checkbox"]:checked + .slider::before {
+  transform: translateX(30px); 
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.card {
+  background: white;
+  padding: 2rem 0.9rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 87%;
+
+}
+
+.card h2 {
+  margin: 0 0 1rem;
+  color: hsl(232, 13%, 33%);
+  font-weight: 700;
+}
+
+.price {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: hsl(232, 13%, 33%);
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card hr {
+  border: none;
+  border-top: 1px solid hsl(234, 14%, 74%);
+  margin: 1.0rem 25px;
+}
+
+.para {
+  font-weight: 700;
+  margin: 0.75rem 0;
+}
+
+.toggle-button{
+  border-radius: 20px;
+  margin: 0;
+  padding: 3px;
+}
+
+button {
+  background: hsl(237, 63%, 64%);;
+  color: white;
+  border: none;
+  padding: 0.75rem 6rem;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover{
+  background: white;
+  color: hsl(237, 63%, 64%);
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 0.75rem 6rem;
+  border: 1px solid hsl(236, 72%, 79%);
+
+}
+
+.highlighted {
+  background: hsl(237, 63%, 64%);;
+  color: white;
+}
+
+.highlighted button:hover{
+  background: hsl(237, 63%, 64%);
+  color: white;
+  border: 2px solid hsl(234, 14%, 74%);
+  padding: 0.75rem 6rem;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.highlighted .price,
+.highlighted h2,
+.highlighted ul li {
+  color: white;
+}
+
+.highlighted button {
+  background: white;
+  color: hsl(232, 13%, 33%);
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-image: url('top_img.svg'), url('bottom_img.svg');
+    background-position: top right, bottom left;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, 400px;
+  }
+
+  .pricing-container {
+    margin-top: 70px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2.5rem;
+    gap: 1.2rem;
+  }
+
+  .card {
+    width: 300px;
+    padding: 2rem 1rem;
+  }
+
+  .highlighted {
+    height: 374px;
+    transform: scale(1.12);
+  }
+
+}

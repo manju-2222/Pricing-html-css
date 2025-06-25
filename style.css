@@ -141,7 +141,7 @@ button {
   color: hsl(237, 63%, 64%);
   border-radius: 5px;
   font-weight: 700;
-  cursor: pointer;
+  /* cursor: pointer; */
   margin-top: 20px;
   padding: 0.75rem 6rem;
   border: 1px solid hsl(236, 72%, 79%);

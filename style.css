@@ -39,6 +39,7 @@ body {
   display: inline-block;
   width: 55px;
   height: 28px;
+  cursor: pointer;
 }
 
 .switch input {

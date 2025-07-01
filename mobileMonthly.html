@@ -12,11 +12,12 @@
 
 <body>
     <div class="pricing-container">
-        <h1>Our Pricing</h1>
+        <h1 class="pricing">Our Pricing</h1>
+        <div class="space"></div>
         <div class="btn">
             <span>Annually</span>
             <form action="index.html">
-                <button type="submit" class="toggle">
+                <button class="toggle" type="submit">
                     <label class="switch">
                         <input type="checkbox" checked>
                         <span class="slider"></span>
@@ -27,9 +28,12 @@
         </div>
 
         <div class="cards">
-            <div class="card">
+            <div class="card1">
                 <h3>Basic</h3>
-                <p class="price">$19.99</p>
+                <div class="dollar-price">
+                    <div class="black-dollar">&dollar;</div>
+                    <div class="price">19.99</div>
+                </div>
                 <hr>
                 <p class="para">500 GB Storage</p>
                 <hr>
@@ -37,25 +41,31 @@
                 <hr>
                 <p class="para">Send up to 3 GB</p>
                 <hr>
-                <button class="hovering">Learn More</button>
+                <button class="hovering">LEARN MORE</button>
             </div>
 
-            <div class="card highlighted">
+            <div class="card-highlighted">
                 <h3>Professional</h3>
-                <p class="price">$24.99</p>
-                <hr>
+                <div class="dollar-price">
+                    <div class="dollar">&dollar;</div>
+                    <div class="price">24.99</div>
+                </div>
+                <hr class="highlighted-hr">
                 <p class="para">1 TB Storage</p>
-                <hr>
+                <hr class="highlighted-hr">
                 <p class="para">5 Users Allowed</p>
-                <hr>
+                <hr class="highlighted-hr">
                 <p class="para">Send up to 10 GB</p>
-                <hr>
-                <button class="hovering">Learn More</button>
+                <hr class="highlighted-hr">
+                <button class="hovering">LEARN MORE</button>
             </div>
 
-            <div class="card">
+            <div class="card2">
                 <h3>Master</h3>
-                <p class="price">$39.99</p>
+                <div class="dollar-price">
+                    <div class="black-dollar">&dollar;</div>
+                    <div class="price">39.99</div>
+                </div>
                 <hr>
                 <p class="para">2 TB Storage</p>
                 <hr>
@@ -63,7 +73,7 @@
                 <hr>
                 <p class="para">Send up to 20 GB</p>
                 <hr>
-                <button class="hovering">Learn More</button>
+                <button class="hovering">LEARN MORE</button>
             </div>
         </div>
     </div>

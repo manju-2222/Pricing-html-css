@@ -172,12 +172,12 @@ input[type="checkbox"]:checked+.slider::before {
 
 .dollar {
   font-size: 2.6rem;
-  margin-top: 36px;
+  margin-top: 31px;
 }
 
 .black-dollar {
   font-size: 2.6rem;
-  margin-top: 36px;
+  margin-top: 31px;
   color: hsl(232, 13%, 33%);
 }
 

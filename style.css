@@ -60,6 +60,10 @@ body {
   transition: background 0.4s;
 }
 
+.card-highlighted1 {
+  display: none;
+}
+
 .slider::before {
   position: absolute;
   content: "";
@@ -95,24 +99,24 @@ input[type="checkbox"]:checked+.slider::before {
 .card1,
 .card2 {
   background: white;
-  padding: 2rem 0.4rem;
-  border-radius: 0.8rem;
+  padding: 1rem 0.4rem 2rem;
+  border-radius: 0.7rem;
   /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  width: 92%;
-
+  width: 310px;
 }
 
 .card-highlighted {
   background: white;
-  padding: 2rem 0.4rem;
-  border-radius: 0.8rem;
+  padding: 1rem 0.4rem 2rem;
+  border-radius: 0.7rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  width: 92%;
+  width: 300px;
   background: linear-gradient(to bottom, hsl(235, 75%, 78%), hsl(237, 63%, 64%));
   color: white;
-
 }
+
+
 
 
 .card1 h2,
@@ -123,10 +127,10 @@ input[type="checkbox"]:checked+.slider::before {
 }
 
 .price {
-  font-size: 4.2rem;
+  font-size: 4rem;
   font-weight: 700;
   color: hsl(232, 13%, 33%);
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-bottom: 1.5rem;
 }
 
@@ -171,13 +175,13 @@ input[type="checkbox"]:checked+.slider::before {
 }
 
 .dollar {
-  font-size: 2.6rem;
-  margin-top: 31px;
+  font-size: 2.5rem;
+  margin-top: 22px;
 }
 
 .black-dollar {
-  font-size: 2.6rem;
-  margin-top: 31px;
+  font-size: 2.5rem;
+  margin-top: 22px;
   color: hsl(232, 13%, 33%);
 }
 
@@ -185,14 +189,15 @@ button {
   background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   color: white;
   border: none;
-  padding: 0.8rem 5rem;
+  padding: 0.9rem 4.7rem;
   border-radius: 5px;
   font-weight: 700;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 17px;
   /* font-size: 9px; */
   letter-spacing: 1.8px;
   font-size: 13px;
+  margin-bottom: 7px;
 }
 
 .hovering:hover {
@@ -261,52 +266,66 @@ button {
 
   .card1 {
     background: white;
-    padding: 2rem 1rem;
+    padding: 1rem 0.4rem 2rem;
     /* border-radius: 0.8rem; */
-    border-top-left-radius: 0.8rem;
-    border-bottom-left-radius: 0.8rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     /* width: 350px; */
-    width: 65%;
+    width: 350px;
 
   }
 
   .card2 {
     background: white;
-    padding: 2rem 1rem;
+    padding: 1rem 0.4rem 2rem;
     /* border-radius: 0.8rem; */
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    border-top-right-radius: 0.8rem;
-    border-bottom-right-radius: 0.8rem;
+    border-top-right-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
     /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    width: 65%;
+    width: 350px;
     /* width: 350px; */
   }
 
-  .card-highlighted {
-    padding: 4rem 1rem;
-    border-radius: 0.8rem;
+  .price1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+
+
+  .card-highlighted1 {
+    padding: 3rem 1.5rem 4rem 1.5rem;
+
+    /* margin-top: -8px; */
+    border-radius: 0.7rem;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    width: 65%;
+    width: 350px;
     /* width: 350px; */
     background: linear-gradient(to bottom, hsl(235, 75%, 78%), hsl(237, 63%, 64%));
     color: white;
     position: relative;
-    margin-top: -2rem;
-    margin-bottom: -2rem;
+    margin-top: -2.5rem;
+    margin-bottom: -2.5rem;
     z-index: 1;
+    display: flex;
+    justify-content: center;
   }
 
   button {
     background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     color: white;
     border: none;
-    padding: 0.9rem 4rem;
+    padding: 0.9rem 5.9rem;
     border-radius: 5px;
     font-weight: 700;
     cursor: pointer;
@@ -327,21 +346,55 @@ button {
     font-weight: 700;
     /* cursor: pointer; */
     margin-top: 20px;
-    padding: 0.8rem 4rem;
+    padding: 0.8rem 5.4rem;
     border: 1px solid hsl(236, 72%, 79%);
     letter-spacing: 1.8px;
     font-size: 13px;
     /* letter-spacing: 2px; */
   }
 
+  .highlighted-hr1 {
+    border: none;
+    border-top: 1px solid hsla(217, 32%, 92%, 0.295);
+    margin: 1.0rem 0px;
+    height: 0.8px;
+    /* height: 0.9px; */
+  }
+
+  .hovering1 {
+    background: white;
+    color: hsl(237, 63%, 60%);
+  }
+
+  .hovering1:hover {
+    background: hsl(237, 63%, 60%);
+    color: white;
+    border: 1px solid hsl(234, 14%, 74%);
+  }
+
   .card-highlighted .hovering:hover {
     background: hsl(237, 63%, 64%);
     color: white;
     border: 2px solid hsl(234, 14%, 74%);
-    padding: 0.8rem 4rem;
+    padding: 0.8rem 5.4rem;
     border-radius: 5px;
     font-weight: 700;
     cursor: pointer;
     margin-top: 20px;
+  }
+
+  .dollar {
+    font-size: 2.5rem;
+    margin-top: 22px;
+  }
+
+  .card-highlighted {
+    display: none;
+  }
+
+  .black-dollar {
+    font-size: 2.5rem;
+    margin-top: 22px;
+    color: hsl(232, 13%, 33%);
   }
 }
